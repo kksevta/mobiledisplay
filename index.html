@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="lib/createTable.js"></script>
+  <script src="app.js"></script>
+</head>
+
+<body class="container">
+  <div class="row" id="formContainer">
+    <form class="form-horizontal">
+      <fieldset>
+        <legend>Add Mobile</legend>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="txtBrandName">Brand Name</label>
+          <div class="col-md-4">
+            <input id="txtBrandName" type="text" placeholder="Brand Name" class="form-control input-md">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="txtModel">Model</label>
+          <div class="col-md-4">
+            <input id="txtModel" name="txtModel" type="text" placeholder="Model" class="form-control input-md">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="txtScreenSize">Screen Size(cm's)</label>
+          <div class="col-md-4">
+            <input id="txtScreenSize" name="txtScreenSize" type="number" placeholder="Screen Size" class="form-control input-md">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="txtMemory">Memory(MB's)</label>
+          <div class="col-md-4">
+            <input id="txtMemory" name="txtMemory" type="number" placeholder="Memory" class="form-control input-md">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="txtReleaseDate">Release Date</label>
+          <div class="col-md-4">
+            <input id="txtReleaseDate" name="txtReleaseDate" type="date" class="form-control input-md">
+          </div>
+        </div>
+
+        <label class="col-md-4 control-label" for="btnAddMobile"></label>
+        <div class="col-md-4">
+          <input type="button" id="btnAddMobile" value="Add Mobile" onclick="addMobile()" class="btn btn-primary">
+        </div>
+      </fieldset>
+    </form>
+    <div id="errorContainer">
+    </div>
+  </div>
+  <div class="row" id="compContainer">
+  </div>
+</body>
+
+</html>
